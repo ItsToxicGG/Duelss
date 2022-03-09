@@ -2,8 +2,8 @@ name: Duels
 api: [4.2.0]
 version: 1.0.0
 main: vixikhd\duels\Duels
-author: SunshroomChan
-description: Simplfy 1v1 plugins with new features
+author: ItzToxic, ZAlpha
+description: A Plugin Orignally Made By ZAlpha Ported To PM4
 depends: [Fireworks, Scoreboards]
 
 extensions: [mysqli, yaml, json, zip]
