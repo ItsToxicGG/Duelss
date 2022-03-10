@@ -23,6 +23,7 @@ namespace vixikhd\duels\arena;
 use BlockHorizons\Fireworks\item\Fireworks;
 use pocketmine\block\utils\SignText;
 use pocketmine\color\Color;
+use pocketmine\utils\Config;
 use pocketmine\item\Item;
 use pocketmine\item\ItemFactory;
 use pocketmine\item\ItemIds;
@@ -99,6 +100,7 @@ class ArenaScheduler extends Task
                     foreach ($this->plugin->players as $player) {
                         if ($player instanceof Player) {
                             $time = $this->startTime;
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -109,12 +111,13 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in: §a" . $time);
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
                         }
                     }
 
                     if ($this->startTime == 10) {
                         if ($player instanceof Player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -125,7 +128,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a10");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                         }
@@ -133,6 +136,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 9) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -143,7 +147,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a9");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                         }
@@ -151,6 +155,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 8) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -161,7 +166,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a8");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                         }
@@ -169,6 +174,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 7) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -179,7 +185,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a7");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                         }
@@ -187,6 +193,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 6) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -197,14 +204,15 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a6");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
-
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
+                            
                             $this->addSound($player, "note.hat");
                         }
                     }
 
                     if ($this->startTime == 5) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -215,7 +223,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a5");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c5");
@@ -224,6 +232,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 4) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -234,7 +243,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a4");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c4");
@@ -243,6 +252,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 3) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -253,7 +263,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a3");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c3");
@@ -262,6 +272,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 2) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -272,8 +283,8 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a2");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
-
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
+                            
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c2");
                         }
@@ -281,6 +292,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 1) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -291,8 +303,8 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a1");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
-
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
+                            
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c1");
                         }
@@ -300,6 +312,7 @@ class ArenaScheduler extends Task
 
                     if ($this->startTime == 0) {
                         foreach ($this->plugin->players as $player) {
+                            $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                             $api = Scoreboards::getInstance();
                             $api->new($player, "ObjectiveName", "§l§eDUELS");
                             $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -310,7 +323,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Game started");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
                         }
                     }
 
@@ -322,6 +335,7 @@ class ArenaScheduler extends Task
                 }
                 else {
                     foreach ($this->plugin->players as $player) {
+                        $cfg = new Config($this->plugin->getDataFolder() . "config.yml", Config::YAML);
                         $api = Scoreboards::getInstance();
                         $api->new($player, "ObjectiveName", "§l§eDUELS");
                         $api->setLine($player, 1, "§7" . date("d/m/Y"));
@@ -332,8 +346,7 @@ class ArenaScheduler extends Task
                         $api->setLine($player, 6, "      ");
                         $api->setLine($player, 7, "Waiting for players...");
                         $api->setLine($player, 8, "          ");
-                        $api->setLine($player, 9, "§ewww.servername.com");
-                        $api->setLine($player, 9, "§ewww.servername.com");
+                        $api->setLine($player, 9, " " . $cfg->get("scoreboardIp", "play.example.net") . " ");
                     }
                     if ($this->teleportPlayers && $this->startTime < $this->plugin->data["startTime"]) {
                         foreach ($this->plugin->players as $player) {
