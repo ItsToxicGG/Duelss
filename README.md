@@ -9,7 +9,10 @@ A Plugin Orignally Made By ZAlpha Ported To PM4
 # Will be implemented Here
 - Custom Kits
 - Custom Win messages
-- Earn 70 coins per a win.
+- Earn coins/BedrockEconomy per a win.
+- Earn coins/BedrockEconomy per a kill.
+- Earn Xp per a win
+- Earn Xp per a kill
 # Libs (Need For Duels To Work!)
 - Scoreboards (https://github.com/DctxGamesGB/Scoreboards)
 - Fireworks (https://github.com/ItsToxicGG/Fireworks)
