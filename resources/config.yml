@@ -64,7 +64,9 @@ portals:
     enabled: true
     function: forcejoin
     worlds: ['nether']
-
+    
+# You can change the server ip here 
+scoreboardip: play.example.com
 # Create custom joinsign design here!
 joinsign:
   custom: false
