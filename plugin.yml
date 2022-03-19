@@ -2,8 +2,8 @@ name: Duelss
 api: 4.2.2
 version: 1.0
 main: vixikhd\duels\Duels
-author: ItzToxic, ZAlpha
-description: A Plugin Orignally Made By ZAlpha Ported To PM4
+author: ItzToxic
+description: The Ulitimate Duels MiniGame Plugin
 depends: [Fireworks, Scoreboards]
 
 extensions: [mysqli, yaml, json, zip]
