@@ -292,6 +292,10 @@ class Arena implements Listener
         $player->getArmorInventory()->setLeggings($leggings);
         $player->getArmorInventory()->setBoots($boots);
     }
+    
+    public function kit2(Player $player) {
+        // soon
+    }
 
     /**
      * @param string $message
