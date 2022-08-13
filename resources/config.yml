@@ -34,6 +34,8 @@ banned-commands:
   - /kick
   - /tp
   - /effect
+  
+Scoreboard-Ip: play.example.net
 
 # Chat
 chat:
