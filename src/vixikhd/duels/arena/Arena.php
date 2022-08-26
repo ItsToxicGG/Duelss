@@ -257,6 +257,10 @@ class Arena implements Listener
             "lobby" => null
         ];
     }
+    
+    public function getKit(Player $player){
+        // Todo
+    }
 
     public function startGame()
     {
@@ -268,29 +272,13 @@ class Arena implements Listener
             $player->getInventory()->clearAll(true);
             $player->setImmobile(false);
             $player->getEffects()->clear();
-            $this->kit1($player);
+            $this->giveKit($player);
         }
 
         $this->players = $players;
         $this->phase = 1;
 
         $this->broadcastMessage(Lang::getMsg("arena.start"), self::MSG_TITLE);
-    }
-
-    public function kit1(Player $player) {
-        $helmet = ItemFactory::getInstance()->get(310, 0, 1);
-        $chestplate = ItemFactory::getInstance()->get(311, 0, 1);
-        $leggings = ItemFactory::getInstance()->get(312, 0, 1);
-        $boots = ItemFactory::getInstance()->get(313, 0, 1);
-        $player->getInventory()->setItem(0, ItemFactory::getInstance()->get(276, 0, 1));
-        $player->getInventory()->setItem(1, ItemFactory::getInstance()->get(322, 0, 1));
-        $player->getInventory()->setItem(2, ItemFactory::getInstance()->get(261, 0, 1));
-        $player->getInventory()->setItem(8, ItemFactory::getInstance()->get(262, 0, 1));
-        $player->getArmorInventory()->clearAll();
-        $player->getArmorInventory()->setHelmet($helmet);
-        $player->getArmorInventory()->setChestplate($chestplate);
-        $player->getArmorInventory()->setLeggings($leggings);
-        $player->getArmorInventory()->setBoots($boots);
     }
 
     /**
