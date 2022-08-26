@@ -109,7 +109,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in: §a" . $time);
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
                         }
                     }
 
@@ -125,7 +125,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a10");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                         }
@@ -143,7 +143,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a9");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                         }
@@ -161,7 +161,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a8");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                         }
@@ -179,7 +179,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a7");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                         }
@@ -197,7 +197,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a6");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                         }
@@ -215,7 +215,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a5");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c5");
@@ -234,7 +234,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a4");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c4");
@@ -253,7 +253,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a3");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c3");
@@ -272,7 +272,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a2");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c2");
@@ -291,7 +291,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Starting in §a1");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
 
                             $this->addSound($player, "note.hat");
                             $player->sendTitle("§c1");
@@ -310,7 +310,7 @@ class ArenaScheduler extends Task
                             $api->setLine($player, 6, "      ");
                             $api->setLine($player, 7, "Game started");
                             $api->setLine($player, 8, "          ");
-                            $api->setLine($player, 9, "§ewww.servername.com");
+                            $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
                         }
                     }
 
@@ -332,8 +332,7 @@ class ArenaScheduler extends Task
                         $api->setLine($player, 6, "      ");
                         $api->setLine($player, 7, "Waiting for players...");
                         $api->setLine($player, 8, "          ");
-                        $api->setLine($player, 9, "§ewww.servername.com");
-                        $api->setLine($player, 9, "§ewww.servername.com");
+                        $api->setLine($player, 9, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
                     }
                     if ($this->teleportPlayers && $this->startTime < $this->plugin->data["startTime"]) {
                         foreach ($this->plugin->players as $player) {
@@ -361,7 +360,7 @@ class ArenaScheduler extends Task
                         $api->setLine($player, 7, "Opponents: §a" . $opponentsname);
                         $api->setLine($player, 8,  "Their health §a" . $opponentshealt);
                         $api->setLine($player, 9, "       ");
-                        $api->setLine($player, 10, "§ewww.servername.com");
+                        $api->setLine($player, 10, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
                     }
                 }
                 if ($this->plugin->checkEnd()) $this->plugin->startRestart();
@@ -378,7 +377,7 @@ class ArenaScheduler extends Task
                     $api->setLine($player, 4, "   ");
                     $api->setLine($player, 5, "Map: §a" . $this->plugin->world->getFolderName());
                     $api->setLine($player, 6, "       ");
-                    $api->setLine($player, 7, "§ewww.servername.com");
+                    $api->setLine($player, 7, $this->plugin->plugin->getConfig()->get("ScoreBoard-IP"));
                 }
                 foreach ($this->plugin->players as $player) {
                     /** @var Fireworks $fw */
